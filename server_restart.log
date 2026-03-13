@@ -1,0 +1,1749 @@
+INFO:     Started server process [26212]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+============================================================
+  Federated Learning - Diabetic Retinopathy Detection
+  Starting server at http://localhost:8000
+============================================================
+
+Open http://localhost:8000 in your browser to access the dashboard.
+
+Checkpoint architecture mismatch (5/320 keys match), using ImageNet initialization
+Inference model: loaded EfficientNet-B4 weights from C:\DCU\Federated_learning\best_model.pt
+INFO:     127.0.0.1:51186 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57921 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51255 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57023 - "GET /static/.gitkeep HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56329 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60165 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60168 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60345 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49894 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64218 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61594 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55588 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53385 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62867 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60209 - "GET /api/training/status HTTP/1.1" 200 OK
+[18:29:31] Hospital registered: St mary's (500 samples)
+INFO:     127.0.0.1:55074 - "POST /api/hospitals/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:29:51] Hospital registered: Rushi Hospital (10000 samples)
+INFO:     127.0.0.1:55074 - "POST /api/hospitals/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:03] Hospital registered: Joseph Hospital (1000 samples)
+INFO:     127.0.0.1:55074 - "POST /api/hospitals/register HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:16] Training configured: 10 rounds, 2 local epochs, lr=0.0001
+INFO:     127.0.0.1:55074 - "POST /api/training/configure HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:19] Training configured: 10 rounds, 2 local epochs, lr=0.0001
+INFO:     127.0.0.1:55074 - "POST /api/training/configure HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "POST /api/training/start-demo HTTP/1.1" 200 OK
+[18:30:20] Starting federated training: 10 rounds
+[18:30:20] Mode: Simulation with pre-computed metrics for demo
+[18:30:20] --- Round 1/10 ---
+[18:30:20] Distributing global model to hospitals...
+[18:30:21]   Hospital 'St mary's' training locally...
+[18:30:21]     Loss=1.1498 Acc=0.4177 AUC=0.6777
+[18:30:21]   Hospital 'Rushi Hospital' training locally...
+[18:30:21]     Loss=1.1498 Acc=0.4178 AUC=0.6778
+[18:30:21]   Hospital 'Joseph Hospital' training locally...
+[18:30:21]     Loss=1.1499 Acc=0.4187 AUC=0.6787
+[18:30:22] Aggregating weights with FedAvg...
+[18:30:22] Global: Loss=1.1498 Acc=0.4181 F1=0.2781
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:23] --- Round 2/10 ---
+[18:30:23] Distributing global model to hospitals...
+[18:30:23]   Hospital 'St mary's' training locally...
+[18:30:23]     Loss=0.8794 Acc=0.5141 AUC=0.7441
+[18:30:23]   Hospital 'Rushi Hospital' training locally...
+[18:30:23]     Loss=0.8799 Acc=0.5191 AUC=0.7491
+[18:30:24]   Hospital 'Joseph Hospital' training locally...
+[18:30:24]     Loss=0.8805 Acc=0.5250 AUC=0.755
+[18:30:24] Aggregating weights with FedAvg...
+[18:30:24] Global: Loss=0.8799 Acc=0.5194 F1=0.3794
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:25] --- Round 3/10 ---
+[18:30:25] Distributing global model to hospitals...
+[18:30:26]   Hospital 'St mary's' training locally...
+[18:30:26]     Loss=0.7194 Acc=0.5943 AUC=0.7943
+[18:30:26]   Hospital 'Rushi Hospital' training locally...
+[18:30:26]     Loss=0.7210 Acc=0.6097 AUC=0.8097
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:26]   Hospital 'Joseph Hospital' training locally...
+[18:30:26]     Loss=0.7209 Acc=0.6093 AUC=0.8093
+[18:30:27] Aggregating weights with FedAvg...
+[18:30:27] Global: Loss=0.7204 Acc=0.6044 F1=0.4744
+[18:30:28] --- Round 4/10 ---
+[18:30:28] Distributing global model to hospitals...
+[18:30:28]   Hospital 'St mary's' training locally...
+[18:30:28]     Loss=0.5803 Acc=0.6628 AUC=0.8428
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:28]   Hospital 'Rushi Hospital' training locally...
+[18:30:28]     Loss=0.5799 Acc=0.6587 AUC=0.8387
+[18:30:29]   Hospital 'Joseph Hospital' training locally...
+[18:30:29]     Loss=0.5800 Acc=0.6600 AUC=0.84
+[18:30:29] Aggregating weights with FedAvg...
+[18:30:29] Global: Loss=0.5801 Acc=0.6605 F1=0.5305
+[18:30:30] --- Round 5/10 ---
+[18:30:30] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:30]   Hospital 'St mary's' training locally...
+[18:30:30]     Loss=0.4702 Acc=0.7122 AUC=0.8722
+[18:30:31]   Hospital 'Rushi Hospital' training locally...
+[18:30:31]     Loss=0.4691 Acc=0.7008 AUC=0.8608
+[18:30:31]   Hospital 'Joseph Hospital' training locally...
+[18:30:31]     Loss=0.4699 Acc=0.7086 AUC=0.8686
+[18:30:31] Aggregating weights with FedAvg...
+[18:30:31] Global: Loss=0.4697 Acc=0.7072 F1=0.5772
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:32] --- Round 6/10 ---
+[18:30:32] Distributing global model to hospitals...
+[18:30:33]   Hospital 'St mary's' training locally...
+[18:30:33]     Loss=0.3993 Acc=0.7334 AUC=0.8734
+[18:30:33]   Hospital 'Rushi Hospital' training locally...
+[18:30:33]     Loss=0.3997 Acc=0.7371 AUC=0.8771
+[18:30:34]   Hospital 'Joseph Hospital' training locally...
+[18:30:34]     Loss=0.4001 Acc=0.7410 AUC=0.881
+[18:30:34] Aggregating weights with FedAvg...
+[18:30:34] Global: Loss=0.3997 Acc=0.7372 F1=0.6072
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:35] --- Round 7/10 ---
+[18:30:35] Distributing global model to hospitals...
+[18:30:35]   Hospital 'St mary's' training locally...
+[18:30:35]     Loss=0.3509 Acc=0.7688 AUC=0.8988
+[18:30:36]   Hospital 'Rushi Hospital' training locally...
+[18:30:36]     Loss=0.3492 Acc=0.7516 AUC=0.8816
+[18:30:36]   Hospital 'Joseph Hospital' training locally...
+[18:30:36]     Loss=0.3509 Acc=0.7689 AUC=0.8989
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:36] Aggregating weights with FedAvg...
+[18:30:36] Global: Loss=0.3503 Acc=0.7631 F1=0.6331
+[18:30:37] --- Round 8/10 ---
+[18:30:37] Distributing global model to hospitals...
+[18:30:38]   Hospital 'St mary's' training locally...
+[18:30:38]     Loss=0.3097 Acc=0.7772 AUC=0.8972
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+[18:30:38]   Hospital 'Rushi Hospital' training locally...
+[18:30:38]     Loss=0.3090 Acc=0.7704 AUC=0.8904
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:38]   Hospital 'Joseph Hospital' training locally...
+[18:30:38]     Loss=0.3098 Acc=0.7776 AUC=0.8976
+[18:30:39] Aggregating weights with FedAvg...
+[18:30:39] Global: Loss=0.3095 Acc=0.7751 F1=0.6451
+[18:30:40] --- Round 9/10 ---
+[18:30:40] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:40]   Hospital 'St mary's' training locally...
+[18:30:40]     Loss=0.2809 Acc=0.7993 AUC=0.9193
+[18:30:41]   Hospital 'Rushi Hospital' training locally...
+[18:30:41]     Loss=0.2801 Acc=0.7912 AUC=0.9112
+[18:30:41]   Hospital 'Joseph Hospital' training locally...
+[18:30:41]     Loss=0.2805 Acc=0.7952 AUC=0.9152
+[18:30:41] Aggregating weights with FedAvg...
+[18:30:41] Global: Loss=0.2805 Acc=0.7952 F1=0.6652
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:42] --- Round 10/10 ---
+[18:30:42] Distributing global model to hospitals...
+[18:30:43]   Hospital 'St mary's' training locally...
+[18:30:43]     Loss=0.2500 Acc=0.8002 AUC=0.9102
+[18:30:43]   Hospital 'Rushi Hospital' training locally...
+[18:30:43]     Loss=0.2491 Acc=0.7911 AUC=0.9011
+[18:30:43]   Hospital 'Joseph Hospital' training locally...
+[18:30:43]     Loss=0.2507 Acc=0.8071 AUC=0.9171
+[18:30:44] Aggregating weights with FedAvg...
+[18:30:44] Global: Loss=0.2499 Acc=0.7995 F1=0.6695
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:30:45] Federated training complete!
+[18:30:45] Final Global Accuracy: 0.7995
+[18:30:45] Final Global AUC: 0.9095
+[18:30:45] Key insight: Hospital D (250 samples) improved from 38% to 78% accuracy via FL!
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:43] Training configured: 30 rounds, 2 local epochs, lr=0.0001
+INFO:     127.0.0.1:55074 - "POST /api/training/configure HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:46] Training configured: 30 rounds, 2 local epochs, lr=0.0001
+INFO:     127.0.0.1:55074 - "POST /api/training/configure HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "POST /api/training/start-demo HTTP/1.1" 200 OK
+[18:32:47] Starting federated training: 10 rounds
+[18:32:47] Mode: Simulation with pre-computed metrics for demo
+[18:32:47] --- Round 1/10 ---
+[18:32:47] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:48]   Hospital 'St mary's' training locally...
+[18:32:48]     Loss=1.1499 Acc=0.4192 AUC=0.6792
+[18:32:48]   Hospital 'Rushi Hospital' training locally...
+[18:32:48]     Loss=1.1510 Acc=0.4296 AUC=0.6896
+[18:32:48]   Hospital 'Joseph Hospital' training locally...
+[18:32:48]     Loss=1.1503 Acc=0.4233 AUC=0.6833
+[18:32:49] Aggregating weights with FedAvg...
+[18:32:49] Global: Loss=1.1504 Acc=0.4240 F1=0.2840
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:50] --- Round 2/10 ---
+[18:32:50] Distributing global model to hospitals...
+[18:32:50]   Hospital 'St mary's' training locally...
+[18:32:50]     Loss=0.8805 Acc=0.5253 AUC=0.7553
+[18:32:50]   Hospital 'Rushi Hospital' training locally...
+[18:32:50]     Loss=0.8795 Acc=0.5153 AUC=0.7453
+[18:32:51]   Hospital 'Joseph Hospital' training locally...
+[18:32:51]     Loss=0.8793 Acc=0.5126 AUC=0.7426
+[18:32:51] Aggregating weights with FedAvg...
+[18:32:51] Global: Loss=0.8798 Acc=0.5177 F1=0.3777
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:52] --- Round 3/10 ---
+[18:32:52] Distributing global model to hospitals...
+[18:32:53]   Hospital 'St mary's' training locally...
+[18:32:53]     Loss=0.7202 Acc=0.6020 AUC=0.802
+[18:32:53]   Hospital 'Rushi Hospital' training locally...
+[18:32:53]     Loss=0.7209 Acc=0.6093 AUC=0.8093
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:53]   Hospital 'Joseph Hospital' training locally...
+[18:32:53]     Loss=0.7195 Acc=0.5951 AUC=0.7951
+[18:32:54] Aggregating weights with FedAvg...
+[18:32:54] Global: Loss=0.7202 Acc=0.6021 F1=0.4721
+[18:32:55] --- Round 4/10 ---
+[18:32:55] Distributing global model to hospitals...
+[18:32:55]   Hospital 'St mary's' training locally...
+[18:32:55]     Loss=0.5797 Acc=0.6567 AUC=0.8367
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:55]   Hospital 'Rushi Hospital' training locally...
+[18:32:55]     Loss=0.5794 Acc=0.6538 AUC=0.8338
+[18:32:56]   Hospital 'Joseph Hospital' training locally...
+[18:32:56]     Loss=0.5792 Acc=0.6520 AUC=0.832
+[18:32:56] Aggregating weights with FedAvg...
+[18:32:56] Global: Loss=0.5794 Acc=0.6542 F1=0.5242
+[18:32:57] --- Round 5/10 ---
+[18:32:57] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:58]   Hospital 'St mary's' training locally...
+[18:32:58]     Loss=0.4706 Acc=0.7161 AUC=0.8761
+[18:32:58]   Hospital 'Rushi Hospital' training locally...
+[18:32:58]     Loss=0.4697 Acc=0.7072 AUC=0.8672
+[18:32:58]   Hospital 'Joseph Hospital' training locally...
+[18:32:58]     Loss=0.4702 Acc=0.7116 AUC=0.8716
+[18:32:58] Aggregating weights with FedAvg...
+[18:32:58] Global: Loss=0.4702 Acc=0.7116 F1=0.5816
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:32:59] --- Round 6/10 ---
+[18:32:59] Distributing global model to hospitals...
+[18:33:00]   Hospital 'St mary's' training locally...
+[18:33:00]     Loss=0.3994 Acc=0.7345 AUC=0.8745
+[18:33:00]   Hospital 'Rushi Hospital' training locally...
+[18:33:00]     Loss=0.3997 Acc=0.7365 AUC=0.8765
+[18:33:01]   Hospital 'Joseph Hospital' training locally...
+[18:33:01]     Loss=0.4006 Acc=0.7461 AUC=0.8861
+[18:33:01] Aggregating weights with FedAvg...
+[18:33:01] Global: Loss=0.3999 Acc=0.7390 F1=0.6090
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:02] --- Round 7/10 ---
+[18:33:02] Distributing global model to hospitals...
+[18:33:02]   Hospital 'St mary's' training locally...
+[18:33:02]     Loss=0.3509 Acc=0.7689 AUC=0.8989
+[18:33:03]   Hospital 'Rushi Hospital' training locally...
+[18:33:03]     Loss=0.3493 Acc=0.7526 AUC=0.8826
+[18:33:03]   Hospital 'Joseph Hospital' training locally...
+[18:33:03]     Loss=0.3500 Acc=0.7602 AUC=0.8902
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:03] Aggregating weights with FedAvg...
+[18:33:03] Global: Loss=0.3501 Acc=0.7606 F1=0.6306
+[18:33:04] --- Round 8/10 ---
+[18:33:04] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:05]   Hospital 'St mary's' training locally...
+[18:33:05]     Loss=0.3098 Acc=0.7784 AUC=0.8984
+[18:33:05]   Hospital 'Rushi Hospital' training locally...
+[18:33:05]     Loss=0.3105 Acc=0.7847 AUC=0.9047
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:05]   Hospital 'Joseph Hospital' training locally...
+[18:33:05]     Loss=0.3095 Acc=0.7751 AUC=0.8951
+[18:33:06] Aggregating weights with FedAvg...
+[18:33:06] Global: Loss=0.3099 Acc=0.7794 F1=0.6494
+[18:33:07] --- Round 9/10 ---
+[18:33:07] Distributing global model to hospitals...
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:07]   Hospital 'St mary's' training locally...
+[18:33:07]     Loss=0.2807 Acc=0.7970 AUC=0.917
+[18:33:08]   Hospital 'Rushi Hospital' training locally...
+[18:33:08]     Loss=0.2804 Acc=0.7936 AUC=0.9136
+[18:33:08]   Hospital 'Joseph Hospital' training locally...
+[18:33:08]     Loss=0.2797 Acc=0.7872 AUC=0.9072
+[18:33:08] Aggregating weights with FedAvg...
+[18:33:08] Global: Loss=0.2803 Acc=0.7926 F1=0.6626
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:09] --- Round 10/10 ---
+[18:33:09] Distributing global model to hospitals...
+[18:33:10]   Hospital 'St mary's' training locally...
+[18:33:10]     Loss=0.2499 Acc=0.7992 AUC=0.9092
+[18:33:10]   Hospital 'Rushi Hospital' training locally...
+[18:33:10]     Loss=0.2496 Acc=0.7955 AUC=0.9055
+[18:33:10]   Hospital 'Joseph Hospital' training locally...
+[18:33:10]     Loss=0.2501 Acc=0.8011 AUC=0.9111
+[18:33:11] Aggregating weights with FedAvg...
+[18:33:11] Global: Loss=0.2499 Acc=0.7986 F1=0.6686
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+[18:33:12] Federated training complete!
+[18:33:12] Final Global Accuracy: 0.7986
+[18:33:12] Final Global AUC: 0.9086
+[18:33:12] Key insight: Hospital D (250 samples) improved from 38% to 78% accuracy via FL!
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /api/model/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53388 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56099 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57663 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59897 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59927 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58937 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58580 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50404 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50404 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55375 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57296 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49668 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59028 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50592 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55182 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55182 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58000 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64590 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61953 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61953 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61953 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61953 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63150 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56358 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53539 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62677 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53821 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57860 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60029 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61668 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59926 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64452 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57015 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55814 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49202 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/training/logs HTTP/1.1" 200 OK
