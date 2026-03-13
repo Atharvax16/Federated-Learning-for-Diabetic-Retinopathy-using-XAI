@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federated Learning - Diabetic Retinopathy Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --warning: #f59e0b;
+            --bg: #f1f5f9;
+            --card: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), #7c3aed);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 { font-size: 1.5rem; font-weight: 700; }
+        .header .subtitle { opacity: 0.9; font-size: 0.9rem; margin-top: 0.25rem; }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .status-idle { background: rgba(255,255,255,0.2); }
+        .status-training { background: var(--success); animation: pulse 2s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 1.5rem; }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+        @media (max-width: 900px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section { margin-bottom: 1.5rem; }
+
+        /* Stat cards */
+        .stat-card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 1.25rem;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        .stat-card .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-card .value { font-size: 2rem; font-weight: 700; color: var(--primary); margin-top: 0.25rem; }
+
+        /* Buttons */
+        .btn {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-success { background: var(--success); color: white; }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn-warning { background: var(--warning); color: white; }
+        .btn-sm { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+
+        .btn-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+        /* Form elements */
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--text-muted); }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus { border-color: var(--primary); }
+
+        /* Hospital cards */
+        .hospital-card {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            border: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .hospital-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .hospital-card .info h4 { font-size: 0.95rem; font-weight: 600; }
+        .hospital-card .info p { font-size: 0.8rem; color: var(--text-muted); }
+        .hospital-card .dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: var(--success); display: inline-block; margin-right: 0.5rem;
+        }
+
+        /* Chart containers */
+        .chart-container { position: relative; height: 300px; width: 100%; }
+
+        /* Logs */
+        .log-container {
+            background: #1e293b;
+            color: #94a3b8;
+            border-radius: 8px;
+            padding: 1rem;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            line-height: 1.8;
+        }
+        .log-container .log-entry { white-space: pre-wrap; }
+        .log-container .log-entry:last-child { color: #e2e8f0; }
+
+        /* Architecture diagram */
+        .architecture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .arch-node {
+            background: linear-gradient(135deg, var(--primary), #7c3aed);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            min-width: 140px;
+        }
+        .arch-node.server { background: linear-gradient(135deg, #dc2626, #f59e0b); }
+        .arch-arrow { font-size: 1.5rem; color: var(--text-muted); }
+        .arch-hospitals { display: flex; flex-direction: column; gap: 0.5rem; }
+        .arch-hospital-node {
+            background: linear-gradient(135deg, #16a34a, #059669);
+            color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Progress bar */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .progress-bar .fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .tab-bar {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 1rem;
+        }
+        .tab {
+            padding: 0.6rem 1.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+        .tab:hover { color: var(--primary); }
+        .tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>Federated Learning Dashboard</h1>
+        <div class="subtitle">Diabetic Retinopathy Detection with XAI | FedAvg Aggregation</div>
+    </div>
+    <div id="statusBadge" class="status-badge status-idle">Idle</div>
+</div>
+
+<div class="container">
+
+    <!-- Architecture Overview -->
+    <div class="section">
+        <div class="card">
+            <h3>System Architecture</h3>
+            <div class="architecture">
+                <div class="arch-hospitals" id="archHospitals">
+                    <div class="arch-hospital-node">Hospital A</div>
+                    <div class="arch-hospital-node">Hospital B</div>
+                    <div class="arch-hospital-node">Hospital C</div>
+                    <div class="arch-hospital-node">Hospital D</div>
+                </div>
+                <div style="text-align:center;">
+                    <div class="arch-arrow">&#x2194; Weights</div>
+                    <div style="font-size:0.75rem; color: var(--text-muted);">Local models train<br>on private data</div>
+                </div>
+                <div class="arch-node server">
+                    Central Server<br><span style="font-size:0.75rem; font-weight:400;">FedAvg Aggregation</span>
+                </div>
+                <div style="text-align:center;">
+                    <div class="arch-arrow">&#x2192; Global Model</div>
+                    <div style="font-size:0.75rem; color: var(--text-muted);">Aggregated weights<br>distributed back</div>
+                </div>
+                <div class="arch-node">
+                    ResNet50<br><span style="font-size:0.75rem; font-weight:400;">5-Class DR Detection</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="section">
+        <div class="grid-4">
+            <div class="stat-card">
+                <div class="label">Hospitals</div>
+                <div class="value" id="statHospitals">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Current Round</div>
+                <div class="value" id="statRound">0/0</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Global Accuracy</div>
+                <div class="value" id="statAccuracy">--</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Global AUC</div>
+                <div class="value" id="statAUC">--</div>
+            </div>
+        </div>
+
+        <div class="progress-bar" style="margin-top:1rem;">
+            <div class="fill" id="progressFill" style="width: 0%;"></div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="section">
+        <div class="card">
+            <h3>Controls</h3>
+            <div class="btn-group" style="margin-bottom: 1rem;">
+                <button class="btn btn-primary" onclick="setupDemo()">1. Setup Demo Hospitals</button>
+                <button class="btn btn-success" id="btnDemo" onclick="startDemoTraining()" style="background:linear-gradient(135deg,#16a34a,#059669);">2. Run Demo (Instant)</button>
+                <button class="btn btn-danger" id="btnStop" onclick="stopTraining()" disabled>Stop Training</button>
+                <button class="btn btn-warning" onclick="downloadModel()">Download Global Model</button>
+                <button class="btn btn-primary" id="btnStart" onclick="startTraining()" style="opacity:0.7; font-size:0.8rem;">Run Real Training (Slow)</button>
+            </div>
+
+            <div class="grid-3">
+                <div class="form-group">
+                    <label>Number of Rounds</label>
+                    <input type="number" id="cfgRounds" value="10" min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <label>Local Epochs</label>
+                    <input type="number" id="cfgEpochs" value="2" min="1" max="20">
+                </div>
+                <div class="form-group">
+                    <label>Local Learning Rate</label>
+                    <input type="number" id="cfgLR" value="0.0001" step="0.00001">
+                </div>
+                <div class="form-group">
+                    <label>Local Batch Size</label>
+                    <input type="number" id="cfgBatch" value="16" min="4" max="128">
+                </div>
+                <div class="form-group">
+                    <label>Loss Function</label>
+                    <select id="cfgLoss">
+                        <option value="focal" selected>Focal Loss</option>
+                        <option value="weighted_ce">Weighted Cross Entropy</option>
+                        <option value="ce">Cross Entropy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Focal Gamma</label>
+                    <input type="number" id="cfgGamma" value="2.0" step="0.5" min="0.5" max="5">
+                </div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="saveConfig()">Save Configuration</button>
+        </div>
+    </div>
+
+    <!-- Tabs: Charts / Hospitals / Logs -->
+    <div class="section">
+        <div class="card">
+            <div class="tab-bar">
+                <div class="tab active" onclick="switchTab('metrics')">Training Metrics</div>
+                <div class="tab" onclick="switchTab('hospitals')">Hospitals</div>
+                <div class="tab" onclick="switchTab('perclass')">Per-Class Analysis</div>
+                <div class="tab" onclick="switchTab('logs')">Logs</div>
+            </div>
+
+            <!-- Metrics Tab -->
+            <div id="tab-metrics" class="tab-content active">
+                <div class="grid-2">
+                    <div>
+                        <h3>Global Loss & Accuracy</h3>
+                        <div class="chart-container">
+                            <canvas id="chartLossAcc"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Global AUC & F1 Score</h3>
+                        <div class="chart-container">
+                            <canvas id="chartAucF1"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <h3>Per-Hospital Accuracy Comparison</h3>
+                    <div class="chart-container">
+                        <canvas id="chartHospitalAcc"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hospitals Tab -->
+            <div id="tab-hospitals" class="tab-content">
+                <div id="hospitalList" style="display:flex; flex-direction:column; gap:0.75rem;">
+                    <p style="color: var(--text-muted);">No hospitals registered. Click "Setup Demo Hospitals" to begin.</p>
+                </div>
+
+                <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+                    <h3>Add Custom Hospital</h3>
+                    <div class="grid-3">
+                        <div class="form-group">
+                            <label>Hospital Name</label>
+                            <input type="text" id="newHospName" placeholder="e.g., St. Mary's Hospital">
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Samples</label>
+                            <input type="number" id="newHospSamples" value="500" min="50">
+                        </div>
+                        <div style="display:flex; align-items:flex-end;">
+                            <button class="btn btn-primary" onclick="addHospital()">Add Hospital</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Per-Class Tab -->
+            <div id="tab-perclass" class="tab-content">
+                <div class="grid-2">
+                    <div>
+                        <h3>Per-Class Recall (Latest Round)</h3>
+                        <div class="chart-container">
+                            <canvas id="chartClassRecall"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Hospital Data Distribution</h3>
+                        <div class="chart-container">
+                            <canvas id="chartDataDist"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logs Tab -->
+            <div id="tab-logs" class="tab-content">
+                <div class="log-container" id="logContainer">
+                    <div class="log-entry">Waiting for activity...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const API = '';
+let pollInterval = null;
+let charts = {};
+
+// ── Chart Setup ────────────────────────────────────────────────────────
+
+function initCharts() {
+    const commonOpts = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'top' } },
+        scales: {
+            x: { title: { display: true, text: 'Round' } },
+            y: { beginAtZero: true }
+        }
+    };
+
+    charts.lossAcc = new Chart(document.getElementById('chartLossAcc'), {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [
+                { label: 'Avg Train Loss', data: [], borderColor: '#dc2626', backgroundColor: 'rgba(220,38,38,0.1)', fill: true, tension: 0.3 },
+                { label: 'Avg Val Accuracy', data: [], borderColor: '#16a34a', backgroundColor: 'rgba(22,163,74,0.1)', fill: true, tension: 0.3, yAxisID: 'y1' }
+            ]
+        },
+        options: {
+            ...commonOpts,
+            scales: {
+                ...commonOpts.scales,
+                y: { beginAtZero: true, title: { display: true, text: 'Loss' }, position: 'left' },
+                y1: { beginAtZero: true, max: 1, title: { display: true, text: 'Accuracy' }, position: 'right', grid: { drawOnChartArea: false } }
+            }
+        }
+    });
+
+    charts.aucF1 = new Chart(document.getElementById('chartAucF1'), {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [
+                { label: 'Avg AUC', data: [], borderColor: '#7c3aed', tension: 0.3, borderWidth: 2 },
+                { label: 'Avg F1 (Macro)', data: [], borderColor: '#f59e0b', tension: 0.3, borderWidth: 2 }
+            ]
+        },
+        options: { ...commonOpts, scales: { ...commonOpts.scales, y: { beginAtZero: true, max: 1 } } }
+    });
+
+    charts.hospitalAcc = new Chart(document.getElementById('chartHospitalAcc'), {
+        type: 'line',
+        data: { labels: [], datasets: [] },
+        options: { ...commonOpts, scales: { ...commonOpts.scales, y: { beginAtZero: true, max: 1, title: { display: true, text: 'Accuracy' } } } }
+    });
+
+    charts.classRecall = new Chart(document.getElementById('chartClassRecall'), {
+        type: 'bar',
+        data: {
+            labels: ['No DR (0)', 'Mild (1)', 'Moderate (2)', 'Severe (3)', 'Proliferative (4)'],
+            datasets: []
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: { y: { beginAtZero: true, max: 1, title: { display: true, text: 'Recall' } } }
+        }
+    });
+
+    charts.dataDist = new Chart(document.getElementById('chartDataDist'), {
+        type: 'doughnut',
+        data: { labels: [], datasets: [{ data: [], backgroundColor: ['#2563eb', '#16a34a', '#f59e0b', '#dc2626', '#7c3aed', '#06b6d4'] }] },
+        options: { responsive: true, maintainAspectRatio: false }
+    });
+}
+
+// ── Tab Switching ──────────────────────────────────────────────────────
+
+function switchTab(name) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('tab-' + name).classList.add('active');
+}
+
+// ── API Calls ──────────────────────────────────────────────────────────
+
+async function apiCall(url, method = 'GET', body = null) {
+    const opts = { method, headers: { 'Content-Type': 'application/json' } };
+    if (body) opts.body = JSON.stringify(body);
+    const res = await fetch(API + url, opts);
+    if (!res.ok) {
+        const err = await res.json().catch(() => ({ detail: res.statusText }));
+        throw new Error(err.detail || 'API error');
+    }
+    return res.json();
+}
+
+async function setupDemo() {
+    try {
+        await apiCall('/api/hospitals/setup-demo', 'POST');
+        await refreshStatus();
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function addHospital() {
+    const name = document.getElementById('newHospName').value.trim();
+    const samples = parseInt(document.getElementById('newHospSamples').value);
+    if (!name) { alert('Enter a hospital name'); return; }
+    try {
+        const id = 'hospital_' + name.toLowerCase().replace(/[^a-z0-9]/g, '_');
+        await apiCall('/api/hospitals/register', 'POST', {
+            hospital_id: id,
+            hospital_name: name,
+            num_samples: samples
+        });
+        document.getElementById('newHospName').value = '';
+        await refreshStatus();
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function removeHospital(id) {
+    try {
+        await apiCall('/api/hospitals/' + id, 'DELETE');
+        await refreshStatus();
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function saveConfig() {
+    try {
+        await apiCall('/api/training/configure', 'POST', {
+            num_rounds: parseInt(document.getElementById('cfgRounds').value),
+            local_epochs: parseInt(document.getElementById('cfgEpochs').value),
+            local_lr: parseFloat(document.getElementById('cfgLR').value),
+            local_batch_size: parseInt(document.getElementById('cfgBatch').value),
+            loss_type: document.getElementById('cfgLoss').value,
+            focal_gamma: parseFloat(document.getElementById('cfgGamma').value),
+        });
+        alert('Configuration saved!');
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function startDemoTraining() {
+    try {
+        await saveConfig();
+        await apiCall('/api/training/start-demo', 'POST');
+        document.getElementById('btnDemo').disabled = true;
+        document.getElementById('btnStart').disabled = true;
+        document.getElementById('btnStop').disabled = false;
+        startPolling();
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function startTraining() {
+    try {
+        await saveConfig();
+        await apiCall('/api/training/start', 'POST');
+        document.getElementById('btnStart').disabled = true;
+        document.getElementById('btnDemo').disabled = true;
+        document.getElementById('btnStop').disabled = false;
+        startPolling();
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+async function stopTraining() {
+    try {
+        await apiCall('/api/training/stop', 'POST');
+    } catch (e) { alert('Error: ' + e.message); }
+}
+
+function downloadModel() {
+    window.location.href = API + '/api/model/download';
+}
+
+// ── Polling & UI Updates ───────────────────────────────────────────────
+
+function startPolling() {
+    if (pollInterval) clearInterval(pollInterval);
+    pollInterval = setInterval(refreshStatus, 2000);
+}
+
+async function refreshStatus() {
+    try {
+        const status = await apiCall('/api/training/status');
+        updateUI(status);
+
+        const logs = await apiCall('/api/training/logs');
+        updateLogs(logs.logs);
+
+        if (!status.is_training && pollInterval) {
+            document.getElementById('btnStart').disabled = false;
+            document.getElementById('btnDemo').disabled = false;
+            document.getElementById('btnStop').disabled = true;
+        }
+    } catch (e) {
+        console.error('Poll error:', e);
+    }
+}
+
+function updateUI(status) {
+    // Status badge
+    const badge = document.getElementById('statusBadge');
+    if (status.is_training) {
+        badge.textContent = `Training Round ${status.current_round}/${status.total_rounds}`;
+        badge.className = 'status-badge status-training';
+    } else if (status.global_metrics.length > 0) {
+        badge.textContent = 'Completed';
+        badge.className = 'status-badge status-idle';
+    } else {
+        badge.textContent = 'Idle';
+        badge.className = 'status-badge status-idle';
+    }
+
+    // Stats
+    document.getElementById('statHospitals').textContent = status.hospitals.length;
+    document.getElementById('statRound').textContent = `${status.current_round}/${status.total_rounds || '--'}`;
+
+    const latest = status.global_metrics[status.global_metrics.length - 1];
+    document.getElementById('statAccuracy').textContent = latest ? (latest.avg_val_acc * 100).toFixed(1) + '%' : '--';
+    document.getElementById('statAUC').textContent = latest && latest.avg_val_auc ? latest.avg_val_auc.toFixed(4) : '--';
+
+    // Progress
+    const pct = status.total_rounds > 0 ? (status.current_round / status.total_rounds) * 100 : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+
+    // Update charts
+    updateCharts(status);
+
+    // Update hospital list
+    updateHospitalList(status.hospitals);
+
+    // Update architecture diagram
+    updateArchDiagram(status.hospitals);
+
+    // Update data distribution chart
+    updateDataDist(status.hospitals);
+
+    // Update per-class recall
+    updateClassRecall(status.hospital_metrics);
+}
+
+function updateCharts(status) {
+    const gm = status.global_metrics;
+    const rounds = gm.map(m => m.round_num);
+
+    // Loss & Accuracy chart
+    charts.lossAcc.data.labels = rounds;
+    charts.lossAcc.data.datasets[0].data = gm.map(m => m.avg_train_loss);
+    charts.lossAcc.data.datasets[1].data = gm.map(m => m.avg_val_acc);
+    charts.lossAcc.update('none');
+
+    // AUC & F1 chart
+    charts.aucF1.data.labels = rounds;
+    charts.aucF1.data.datasets[0].data = gm.map(m => m.avg_val_auc || 0);
+    charts.aucF1.data.datasets[1].data = gm.map(m => m.avg_val_f1);
+    charts.aucF1.update('none');
+
+    // Per-hospital accuracy
+    const colors = ['#2563eb', '#16a34a', '#f59e0b', '#dc2626', '#7c3aed', '#06b6d4'];
+    const datasets = [];
+    let i = 0;
+    for (const [hid, metrics] of Object.entries(status.hospital_metrics)) {
+        const hospName = status.hospitals.find(h => h.hospital_id === hid)?.hospital_name || hid;
+        datasets.push({
+            label: hospName,
+            data: metrics.map(m => m.val_acc),
+            borderColor: colors[i % colors.length],
+            tension: 0.3,
+            borderWidth: 2,
+        });
+        i++;
+    }
+    charts.hospitalAcc.data.labels = rounds;
+    charts.hospitalAcc.data.datasets = datasets;
+    charts.hospitalAcc.update('none');
+}
+
+function updateHospitalList(hospitalList) {
+    const container = document.getElementById('hospitalList');
+    if (hospitalList.length === 0) {
+        container.innerHTML = '<p style="color: var(--text-muted);">No hospitals registered. Click "Setup Demo Hospitals" to begin.</p>';
+        return;
+    }
+    container.innerHTML = hospitalList.map(h => `
+        <div class="hospital-card">
+            <div class="info">
+                <h4><span class="dot"></span>${h.hospital_name}</h4>
+                <p>${h.num_samples} samples | ${h.rounds_participated} rounds participated</p>
+            </div>
+            <button class="btn btn-danger btn-sm" onclick="removeHospital('${h.hospital_id}')">Remove</button>
+        </div>
+    `).join('');
+}
+
+function updateArchDiagram(hospitalList) {
+    const container = document.getElementById('archHospitals');
+    if (hospitalList.length === 0) return;
+    container.innerHTML = hospitalList.map(h =>
+        `<div class="arch-hospital-node">${h.hospital_name}<br><span style="font-size:0.7rem;font-weight:400;">${h.num_samples} samples</span></div>`
+    ).join('');
+}
+
+function updateDataDist(hospitalList) {
+    if (hospitalList.length === 0) return;
+    charts.dataDist.data.labels = hospitalList.map(h => h.hospital_name);
+    charts.dataDist.data.datasets[0].data = hospitalList.map(h => h.num_samples);
+    charts.dataDist.update('none');
+}
+
+function updateClassRecall(hospitalMetrics) {
+    const classNames = ['No DR (0)', 'Mild (1)', 'Moderate (2)', 'Severe (3)', 'Proliferative (4)'];
+    const colors = ['#2563eb', '#16a34a', '#f59e0b', '#dc2626', '#7c3aed', '#06b6d4'];
+    const datasets = [];
+    let i = 0;
+
+    for (const [hid, metrics] of Object.entries(hospitalMetrics)) {
+        if (metrics.length === 0) continue;
+        const latest = metrics[metrics.length - 1];
+        datasets.push({
+            label: hid,
+            data: latest.per_class_recall,
+            backgroundColor: colors[i % colors.length] + '99',
+            borderColor: colors[i % colors.length],
+            borderWidth: 1,
+        });
+        i++;
+    }
+
+    charts.classRecall.data.datasets = datasets;
+    charts.classRecall.update('none');
+}
+
+function updateLogs(logs) {
+    const container = document.getElementById('logContainer');
+    if (!logs || logs.length === 0) return;
+    container.innerHTML = logs.map(l => `<div class="log-entry">${escapeHtml(l)}</div>`).join('');
+    container.scrollTop = container.scrollHeight;
+}
+
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+// ── Init ───────────────────────────────────────────────────────────────
+
+window.addEventListener('load', () => {
+    initCharts();
+    refreshStatus();
+    startPolling();
+});
+</script>
+
+</body>
+</html>
